@@ -1,0 +1,15 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.dbo = HaiND613958TH5.Document
+HKEY_CLASSES_ROOT\HaiND613958TH5.Document\shell\open\command = HaiND_613958_TH5.EXE %1
+HKEY_CLASSES_ROOT\HaiND613958TH5.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\HaiND613958TH5.Document\shell\open\ddeexec\application = HaiND_613958_TH5
+    ; note: the application is optional
+    ;  (it defaults to the app name in "command")
+
+HKEY_CLASSES_ROOT\HaiND613958TH5.Document = HaiND_613958_TH5.Document
+
